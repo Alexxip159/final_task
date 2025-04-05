@@ -24,6 +24,7 @@ target/
 /nbbuild/
 /dist/
 /nbdist/
+
 /.nb-gradle/
 build/
 !**/src/main/**/build/
@@ -31,3 +32,20 @@ build/
 
 ### VS Code ###
 .vscode/
+# Исключить временные файлы
+*.log
+*.tmp
+
+# Исключить системные файлы
+.mvn/
+mvnw
+mvnw.cmd
+
+# Исключить IDE-файлы
+.idea/
+*.iml
+# Ignore everything except src, templates, and pom.xml
+/*
+!/src/
+!/src/main/resources/templates/
+!/pom.xml
